@@ -1,0 +1,131 @@
+/* ======= Base ======= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #eef6fd;
+  color: #0f172a;
+  font-size: 18px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ======= Header ======= */
+.main-header {
+  background: #0f4c81;
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a,
+.nav-links li button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li button:hover {
+  color: #ffdd57;
+}
+
+#darkModeToggle {
+  font-size: 1.1rem;
+}
+
+/* ======= Publication Cards ======= */
+.publication-list {
+  padding: 40px 0;
+}
+
+.pub-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.pub-card h2 {
+  color: #0f4c81;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.pub-card p {
+  font-size: 1rem;
+  color: #334155;
+}
+
+/* ======= Footer ======= */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0f4c81;
+  color: white;
+  font-size: 0.95rem;
+  margin-top: 50px;
+  border-top: 4px solid #0a3c6d;
+}
+
+
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .pub-card {
+    padding: 20px;
+  }
+}
