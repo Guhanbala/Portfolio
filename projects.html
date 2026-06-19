@@ -4,52 +4,88 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Guhan K.B | Projects</title>
-  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
-    <div class="nav-container container">
-      <div class="nav-logo">My Projects</div>
+    <div class="nav-container">
+      <div class="nav-logo">Projects</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="EXPERIENCE.html">Experience</a></li>
-        <li> <a href="certificates.html"> Certifications</a></li>
-        <li><button id="darkModeToggle">🌙</button></li>
+        <li><a href="certificates.html">Certifications</a></li>
+        <li><button id="toggleTheme">☀</button></li>
       </ul>
     </div>
   </header>
 
   <section class="container project-grid">
+
     <div class="project-card">
-      <img src="fruit.jpg" alt="Fruit Condition Prediction" />
-      <h2>Fruit Condition Prediction</h2>
-      <p>AI system combining Arduino (MQ2/MQ4) sensors with ResNet18 + ViT to classify banana stages. Achieved 96% validation accuracy for real-time freshness monitoring.</p>
+      <span class="index">01 &middot; Computer Vision</span>
+      <h2>Hybrid Lightweight YOLOv8/YOLOv10 for PCB Component Detection</h2>
+      <p>A lightweight hybrid YOLO architecture for detecting 22 PCB component classes, cutting parameter count substantially while holding detection quality.</p>
+      <div class="specs">
+        <span class="spec"><b>0.887</b> mAP@0.5</span>
+        <span class="spec"><b>&minus;46%</b> params (YOLOv10n)</span>
+        <span class="spec"><b>&minus;55%</b> params (YOLOv8n)</span>
+      </div>
     </div>
 
     <div class="project-card">
-      <img src="emotion.jpg" alt="Emotion-aware Image Captioning" />
-      <h2>Emotion-aware Image Captioning</h2>
-      <p>Combines CNN-based emotion detection, encoder-decoder captioning, and NLP for emotionally contextualized image descriptions.</p>
+      <span class="index">02 &middot; NLP</span>
+      <h2>English&ndash;Tamil Abstractive Summarization &amp; Translation</h2>
+      <p>An end-to-end BART + IndicTrans2 pipeline for abstractive summarization and neural machine translation, fine-tuned on CNN/DailyMail.</p>
+      <div class="specs">
+        <span class="spec">ROUGE-1 <b>0.538</b></span>
+        <span class="spec">ROUGE-L <b>0.436</b></span>
+        <span class="spec">vs PEGASUS <b>0.471</b></span>
+      </div>
+      <div class="link-row"><a href="https://github.com/Guhanbala/" target="_blank">View on GitHub →</a></div>
     </div>
 
     <div class="project-card">
-      <img src="pet.jpg" alt="Happy Tail Pet App" />
-      <h2>Happy Tail – Pet Care App</h2>
-      <p>Developed a pet care system with skin disease detection (ML model), real-time alerts, and secure dashboards using Flask, Node.js, MySQL, and HTML/CSS/JS.</p>
+      <span class="index">03 &middot; Controls &amp; Energy Systems</span>
+      <h2>Hierarchical Control of Electro-Thermal Systems in Hospital Microgrids</h2>
+      <p>Compared MPC and Fuzzy-PID hierarchical control frameworks for hospital microgrid energy management against a Grid+PV baseline.</p>
+      <div class="specs">
+        <span class="spec">MPC <b>&minus;50.8%</b> cost</span>
+        <span class="spec">Fuzzy-PID <b>&minus;11.1%</b> cost</span>
+      </div>
+      <div class="link-row"><a href="https://github.com/Guhanbala/" target="_blank">View on GitHub →</a></div>
     </div>
 
     <div class="project-card">
-      <img src="images/segmentation.jpg" alt="Image Segmentation BFS" />
-      <h2>Image Segmentation (BFS)</h2>
-      <p>Grayscale image segmentation using BFS algorithm to differentiate foreground and background regions.</p>
+      <span class="index">04 &middot; Multimodal ML &middot; Healthcare</span>
+      <h2>Multimodal Voice Pathology Classification</h2>
+      <p>A hierarchical multimodal framework that detects and diagnoses voice pathologies from combined audio and clinical signal inputs.</p>
+      <div class="specs">
+        <span class="spec"><b>82.93%</b> detection acc.</span>
+        <span class="spec"><b>67.24%</b> diagnostic acc.</span>
+      </div>
+      <div class="link-row"><a href="https://github.com/Guhanbala/" target="_blank">View on GitHub →</a></div>
     </div>
+
+    <div class="project-card">
+      <span class="index">05 &middot; Mobile &middot; CV/GenAI</span>
+      <h2>CVD Diagnosis and Correction App</h2>
+      <p>A Flutter application that uses CNNs and GANs to detect and correct Color Vision Deficiency, with real-time analytics support.</p>
+      <div class="specs">
+        <span class="spec">CNN + GAN pipeline</span>
+        <span class="spec">Real-time analytics</span>
+      </div>
+      <div class="link-row"><a href="https://github.com/Guhanbala/" target="_blank">View on GitHub →</a></div>
+    </div>
+
   </section>
 
-
   <footer class="container">
-    <p> Guhan K.B | Portfolio</p>
+    <p>Guhan K.B &middot; Portfolio &middot; Updated 2026</p>
   </footer>
 </body>
 </html>
