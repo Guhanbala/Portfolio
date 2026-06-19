@@ -3,65 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Guhan K.B | Publications</title>
-  <link rel="stylesheet" href="publications.css" />
+  <title>Guhan K.B | Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
-    <div class="nav-container container">
-      <div class="nav-logo">MY EXPERIENCE</div>
+    <div class="nav-container">
+      <div class="nav-logo">Experience</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="EXPERIENCE.html">Experience</a></li>
-        <li> <a href="certificates.html"> Certifications</a></li>
-        <li><button id="darkModeToggle">🌙</button></li>
+        <li><a href="certificates.html">Certifications</a></li>
+        <li><button id="toggleTheme">☀</button></li>
       </ul>
     </div>
   </header>
 
-  <section class="container publication-list">
-    <div class="pub-card">
-      <h2>Hanuven</h2>
-      <h6>Sep 2024 - PRESENT</h6>
-      <p>Hanuven healthcare is an Ayurvedic startup currently producing
-Perchins Haircare Oil and Hanuvam Skincare Oil
-As an Intern my duty is to mange team, documentation ,testing and
-creating an chatbot for the company.
-In further days we will be working on prediction of sales.
-</p>
+  <section class="container card-list">
+
+    <div class="x-card">
+      <div class="row-head">
+        <h2>Software Developer (AI/ML)</h2>
+        <span class="meta">Oct 2025 &ndash; Apr 2026</span>
+      </div>
+      <div class="org">The Home Ideas &middot; Remote, Bangalore</div>
+      <ul>
+        <li>Built a virtual interior design platform using SegFormer and SAM 3 for automated wallpaper and flooring segmentation and visualisation.</li>
+        <li>Implemented a voice-enabled AI chatbot with Gemini and OpenAI APIs, integrating FAISS-powered retrieval and web scraping to improve response accuracy.</li>
+      </ul>
     </div>
 
-    <div class="pub-card">
-      <h2>Metadata</h2>
-      <h6>Oct 2024 - PRESENT</h6>
-      <p>This product development initiative focuses on experimental model
-analysis for statistics, machine learning, and deep learning.
-Worked in creating a deep neural description tree model and
-developing a chatbot for the complete product, along with full
-documentation</p>
-    </div>
-<div class="pub-card">
-      <h2>Atma yoga</h2>
-      <h6>Jan 2024 - PRESENT</h6>
-      <p>The product initiative aims to help people manage stress and
-tension by assisting them in performing yoga asanas designed for
-stress relief.
-Working in creating the dataset of performing the yoga asana
-currently</p>
+    <div class="x-card">
+      <div class="row-head">
+        <h2>Product Developer</h2>
+        <span class="meta">Jul 2024 &ndash; Mar 2025</span>
+      </div>
+      <div class="org">Hanuven Healthcare &middot; Remote</div>
+      <ul>
+        <li>Built an LLM-powered chatbot using a Retrieval-Augmented Generation (RAG) architecture, improving customer query resolution through context-aware responses generated from company data.</li>
+        <li>Managed team coordination, documentation, and testing for an Ayurvedic product line (Perchins Haircare Oil &amp; Hanuvam Skincare Oil), alongside early work on sales-prediction modelling.</li>
+      </ul>
     </div>
 
   </section>
 
   <footer>
-    <p> Guhan K.B | Portfolio</p>
+    <p>Guhan K.B &middot; Portfolio &middot; Updated 2026</p>
   </footer>
-
-  <script>
-    document.getElementById("darkModeToggle").addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-    });
-  </script>
 </body>
 </html>
