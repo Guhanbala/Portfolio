@@ -4,45 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Guhan K.B | Publications</title>
-  <link rel="stylesheet" href="publications.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
-    <div class="nav-container container">
-      <div class="nav-logo">My Publications</div>
+    <div class="nav-container">
+      <div class="nav-logo">Publications</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="EXPERIENCE.html">Experience</a></li>
-        <li> <a href="certificates.html"> Certifications</a></li>
-        <li><button id="darkModeToggle">🌙</button></li>
+        <li><a href="certificates.html">Certifications</a></li>
+        <li><button id="toggleTheme">☀</button></li>
       </ul>
     </div>
   </header>
 
-  <section class="container publication-list">
-    <div class="pub-card">
-      <h2>Solar Powered Agricultural Robot</h2>
-      <h5>Shatha Varsha Sree, Jeevakamal K.R, Guhan K.B,Gowtham S.D, Akhil VM</h5>
-      <p>The solar-powered agricultural robot uses Arduino Mega 2560 for interfacing sensors (soil moisture, ultrasonic, temperature, humidity) and actuators. MATLAB Simulink aids in simulation and control design. Motors handle locomotion and irrigation, powered by solar panels. Motor drivers and relays manage actuators, enabling efficient, autonomous irrigation through sensor data processing and control algorithms.</p>
+  <section class="container card-list">
+
+    <div class="x-card">
+      <div class="row-head">
+        <h2>Bio-Inspired Snake Robot for Real-Time Victim Detection in Disaster Environments<span class="badge">Best Paper Award</span></h2>
+        <span class="meta">IEEE &middot; Mar 2026</span>
+      </div>
+      <p>A snake-like robot platform designed for navigating rubble and confined spaces in disaster zones, performing real-time victim detection to support search-and-rescue operations.</p>
     </div>
 
-    <div class="pub-card">
-      <h2>Two vs Four-Wheel Differential Bots</h2>
-      <h5>LalithKishore J, Harikrishna S, Guhan K.B, Deepak kumar K, Akhil VM</h5>
-      <p>The study compares two-wheeled and four-wheeled racing robots in ROS-Gazebo using PWM control, kinematics, dynamics, and SLAM. Sensors include LiDAR, IMU, and encoders. Path planning uses Euclidean, Manhattan, Chebyshev distances, and DTW. Four-wheeled robots offer better control, while two-wheeled robots excel in speed but lack stability.</p>
+    <div class="x-card">
+      <div class="row-head">
+        <h2>Emotion-Aware Image Captioning using Deep Learning</h2>
+        <span class="meta">IEEE &middot; Mar 2026</span>
+      </div>
+      <p>Combines CNN-based emotion recognition with an encoder&ndash;decoder captioning model to generate image descriptions that are contextually aware of emotional tone.</p>
     </div>
+
+    <div class="x-card">
+      <div class="row-head">
+        <h2>Two and Four Wheels Differential Racing Bots</h2>
+        <span class="meta">IEEE &middot; Aug 2025</span>
+      </div>
+      <div class="org">LalithKishore J, Harikrishna S, Guhan K.B, Deepak Kumar K, Akhil VM</div>
+      <p>Compares two-wheeled and four-wheeled racing robots in ROS-Gazebo using PWM control, kinematics, dynamics, and SLAM, with path planning via Euclidean, Manhattan, Chebyshev distances, and DTW. Four-wheeled robots offered better control; two-wheeled robots excelled in speed but lacked stability.</p>
+    </div>
+
+    <div class="x-card">
+      <div class="row-head">
+        <h2>Solar Powered Agricultural Robot for Irrigation</h2>
+        <span class="meta">AIP &middot; Feb 2026</span>
+      </div>
+      <div class="org">Shatha Varsha Sree, Jeevakamal K.R, Guhan K.B, Gowtham S.D, Akhil VM</div>
+      <p>A solar-powered agricultural robot built on an Arduino Mega 2560 for sensor interfacing (soil moisture, ultrasonic, temperature, humidity) and actuator control, with MATLAB Simulink used for simulation and control design &mdash; enabling efficient, autonomous irrigation.</p>
+    </div>
+
   </section>
 
   <footer>
-    <p> Guhan K.B | Portfolio</p>
+    <p>Guhan K.B &middot; Portfolio &middot; Updated 2026</p>
   </footer>
-
-  <script>
-    document.getElementById("darkModeToggle").addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-    });
-  </script>
 </body>
 </html>
